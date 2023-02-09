@@ -16,11 +16,11 @@ jobs:
       - checkout
       - run:
           name: install npm dependencies
-          command: 
+          command: |
             npm install --save
       - run: 
           name: running apps
-          command: 
+          command: |
             node dist/index.js 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
